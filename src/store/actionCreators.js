@@ -22,7 +22,7 @@ export const getMenuAction = (data) => ({
 
 export const getToDoList = () => {
   return (dispatch) => {
-    axios.get('http://rap2.taobao.org:38080/app/mock/247628/menuList').then(res => {
+    axios.get('https://www.fastmock.site/mock/f39120219b2c2028004354821c61bc6f/todoList').then(res => {
       const action = getMenuAction(res.data.data)
       dispatch(action)
     }).catch(err => {
