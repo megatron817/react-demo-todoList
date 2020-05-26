@@ -22,7 +22,7 @@ export const getMenuAction = (data) => ({
 
 export const getToDoList = () => {
   return (dispatch) => {
-    axios.get('https://www.fastmock.site/mock/f39120219b2c2028004354821c61bc6f/todoList').then(res => {
+    axios.get('https://www.fastmock.site/mock/f39120219b2c2028004354821c61bc6f/todoList/menuList').then(res => {
       const action = getMenuAction(res.data.data)
       dispatch(action)
     }).catch(err => {
